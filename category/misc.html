@@ -1758,9 +1758,9 @@ jQuery(document).ready(function($) {
   		<article>
 <header>
       <h1 class="entry-title">
-        <a href="https://jtruesdal.github.io/steering/blog/2015/02/10/steering2/">POP Steering Parameterization</a>
+        <a href="https://jtruesdal.github.io/steering/blog/2015/02/11/steering2/">POP Steering Parameterization</a>
       </h1>
-      <p class="meta"><time datetime="2015-02-10T10:00:00" pubdate>Feb 10, 2015</time></p>
+      <p class="meta"><time datetime="2015-02-11T10:00:00" pubdate>Feb 11, 2015</time></p>
 </header>
 
   <div class="entry-content"><p>
@@ -1769,18 +1769,14 @@ jQuery(document).ready(function($) {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Here are my notes on the development of a parameterization for eddy diffusivity.  The scheme is based on the <a href="http://journals.ametsoc.org/doi/abs/10.1175/JPO-D-13-0130.1">paper</a> by Michael Bates, Ross Tulloch, John Marshall, AND Raffaele Ferrari. I&#39;m working with Gokhan Danabasoglu and Matt Long here at NCAR and John Marshall at MIT.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="gokhan-s-implementation-notes-on-diffusivity-with-steering-level-suppression">Gokhan&#39;s Implementation ...</h3></div></div></div></p></div>
+<h2 id="parameterizing-the-eddy-length-scale">Parameterizing the Eddy Length Scale</h2>
+<p>$$K=u_{rms}∗{\Gamma * \color{red}{L_{eddy}} \over (1 + b1 * |u_{mean} - c|^2 /u_{rms}^2 (z=0)} $$  </p>
+<p>The three length scales under consideration:  </p>
+<ol>
+<li>Rossby Deformation Radius $\quad\quad L_r = {c_r \over |f|}$</li>
+<li>Rossby Equatorial Radius $ \quad\quad= L_{req} = {\sqrt{c_r \over ...</li></ol></div></div></div></p></div>
   <footer>
-    <a rel="full-article" href="https://jtruesdal.github.io/steering/blog/2015/02/10/steering2/">Read On &crarr;</a>
+    <a rel="full-article" href="https://jtruesdal.github.io/steering/blog/2015/02/11/steering2/">Read On &crarr;</a>
   </footer>
   		</article>
 <div class="pagination">
@@ -1792,7 +1788,7 @@ jQuery(document).ready(function($) {
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
       <li class="post">
-          <a href="https://jtruesdal.github.io/steering/blog/2015/02/10/steering2/">POP Steering Parameterization</a>
+          <a href="https://jtruesdal.github.io/steering/blog/2015/02/11/steering2/">POP Steering Parameterization</a>
       </li>
     </ul>
   </section>
