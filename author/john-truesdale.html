@@ -1764,13 +1764,22 @@ jQuery(document).ready(function($) {
 </header>
 
   <div class="entry-content"><p>
-<div class="cell border-box-sizing text_cell rendered">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
+In&nbsp;[67]:
 </div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="pop-implementation-of-mesoscale-eddy-diffusivity-based-on-mixing-theory">POP Implementation of Mesoscale eddy diffusivity based on mixing theory</h1>
-<p>Here are my notes on the development of a parameterization for eddy diffusivity. The scheme is based on the <a href="http://journals.ametsoc.org/doi/abs/10.1175/JPO-D-13-0130.1">paper</a> by Michael Bates, Ross Tulloch, John Marshall, and Raffaele Ferrari. I'm working with Gokhan Danabasoglu and Matt Long here ...</p></div></div></div></p></div>
+
+<div class="collapseheader box-flex1"><span style="font-weight: bold;">Expand Code</span>
+<div class="input_area box-flex1" style="display:none">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="c"># &lt;!-- collapse=True --&gt; </span>
+<span class="kn">from</span> <span class="nn">IPython</span> <span class="kn">import</span> <span class="n">utils</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="k">def</span> <span class="nf">css_styling</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Load default custom.css file from ipython profile&quot;&quot;&quot;</span>
+    <span class="n">base</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">get_ipython_dir</span><span class="p">()</span>
+    <span class="n">styles</span> <span class="o">=</span> <span class="s">&quot;&lt;style&gt;</span><span class="se">\n</span><span class="si">%s</span><span class="se">\n</span><span class="s">&lt;/style&gt;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">base</span><span class="p">,</span><span class="s">&#39;profile_default/static/custom/custom.css&#39;</span><span class="p">),</span><span class="s">&#39;r&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read ...</span></pre></div></div></div></div></div></p></div>
   <footer>
     <a rel="full-article" href="https://jtruesdal.github.io/steering/blog/2015/06/02/steering6/">Read On &crarr;</a>
   </footer>
